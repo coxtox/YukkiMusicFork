@@ -8,11 +8,13 @@
 # All rights reserved.
 #
 
+import asyncio
+
 from pyrogram import filters
+
 from YukkiMusic import app
 from YukkiMusic.misc import SUDOERS
 from YukkiMusic.utils.database import maintenance_off, maintenance_on
-import asyncio
 
 
 async def chk_need_auth(timeout: int = 7):
